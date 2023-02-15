@@ -4,12 +4,12 @@
 
 总模块设计如下:
 
-<img src="https://github.com/Yuqunyi/JAVA-Project/blob/main/image/picture1.png" width=300px>
+<img src="https://github.com/Yuqunyi/JAVA-Project/blob/main/image/picture1.png" width="300px">
 
 ## 2. 概要设计  
 该程序设计可分为三个模块，分别是地铁信息查询界面、管理员登录界面以及存储线路信息的类。对系统文件结构列表说明：
 
-<img src="https://github.com/Yuqunyi/JAVA-Project/blob/main/image/picture2.png" width=500px>
+<img src="https://github.com/Yuqunyi/JAVA-Project/blob/main/image/picture2.png" width="500px">
 
 ## 3. 详细设计   
 ### 3.1 界面设计  
@@ -40,13 +40,13 @@ public class MessageQuery extends JFrame {
 ```
 查询界面如图：
 
-<img src="https://github.com/Yuqunyi/JAVA-Project/blob/main/image/picture3.png" width=400px>
+<img src="https://github.com/Yuqunyi/JAVA-Project/blob/main/image/picture3.png" width="400px">
 
 **（2）管理员登录界面**
 
 利用JDialog的子类创建管理员登录对话框，分别给登录按钮和退出按钮添加监视器，若点击退出按钮，调用System.exit(0)实现退出系统;若点击登录按钮，首先通过getText()方法获取输入内容，然后判断用户名和密码是否正确，若正确，弹出消息框并显示“登录成功！”，否则显示“用户名或密码错误!”。登录界面如图：
 
-<img src="https://github.com/Yuqunyi/JAVA-Project/blob/main/image/picture4.png" width=250px>
+<img src="https://github.com/Yuqunyi/JAVA-Project/blob/main/image/picture4.png" width="250px">
 
 在这个类中，对话框所含组件如下，在init()方法中创建组件后调用add()可将所有组件添加至容器中。
 ```java
@@ -196,19 +196,19 @@ if(subway.LineQuery(input)) {    //判断输入词是否为线路名称
 ## 4. 项目测试  
 (1)运行“**管理员**”菜单，弹出登录对话框，输入用户名和密码进行登录，根据登录结果弹出消息对话框：
 
-<img src="https://github.com/Yuqunyi/JAVA-Project/blob/main/image/picture5.png" width=250px>
+<img src="https://github.com/Yuqunyi/JAVA-Project/blob/main/image/picture5.png" width="250px">
 
-<img src="https://github.com/Yuqunyi/JAVA-Project/blob/main/image/picture6.png" width=250px>    <img src="https://github.com/Yuqunyi/JAVA-Project/blob/main/image/picture7.png" width=250px>
+<img src="https://github.com/Yuqunyi/JAVA-Project/blob/main/image/picture6.png" width="250px">    <img src="https://github.com/Yuqunyi/JAVA-Project/blob/main/image/picture7.png" width="250px">
 
 (2)在主界面输入【**线路名称**】进行查询，如输入“3号线”，查询结果如下：
 
-<img src="https://github.com/Yuqunyi/JAVA-Project/blob/main/image/picture8.png" width=400px>
+<img src="https://github.com/Yuqunyi/JAVA-Project/blob/main/image/picture8.png" width="400px">
 
 (3)点击“清空”按钮清空检索词，输入【**站点名称**】进行查询，如输入“循礼门”，由于此站点所在线路为1、2、4号线，因此将显示三条线路的信息，通过文本面板上的滚动条可查看所有信息：
 
-<img src="https://github.com/Yuqunyi/JAVA-Project/blob/main/image/picture9.png" width=400px>     <img src="https://github.com/Yuqunyi/JAVA-Project/blob/main/image/picture10.png" width=400px>
+<img src="https://github.com/Yuqunyi/JAVA-Project/blob/main/image/picture9.png" width="400px">     <img src="https://github.com/Yuqunyi/JAVA-Project/blob/main/image/picture10.png" width="400px">
 
 (4)若未查询到相关信息，则在结果显示文本区输出提示信息：
 
-<img src="https://github.com/Yuqunyi/JAVA-Project/blob/main/image/picture11.png" width=400px>
+<img src="https://github.com/Yuqunyi/JAVA-Project/blob/main/image/picture11.png" width="400px">
 
